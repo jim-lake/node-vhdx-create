@@ -1,0 +1,32 @@
+{
+  "name": "node-vhdx-create",
+  "version": "0.0.1",
+  "description": "Create a vhdx file from node",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pretty": "prettier --write src/* dist/*.js dist/*.ts package.json tsconfig.json",
+    "lint": "tsc -noEmit && eslint src/*",
+    "build": "tsc && npm run pretty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jim-lake/node-vhdx-create.git"
+  },
+  "keywords": [
+    "vhdx"
+  ],
+  "author": "github.com/jim-lake",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "9.13.0",
+    "@types/eslint__js": "8.42.3",
+    "@types/node": "22.7.7",
+    "@typescript-eslint/parser": "8.10.0",
+    "eslint": "9.13.0",
+    "typescript": "5.6.3",
+    "typescript-eslint": "8.10.0"
+  }
+}
